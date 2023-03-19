@@ -1,0 +1,12 @@
+[serviceweaver]
+binary = "./hello-serviceweaver"
+rollout = "5m"
+
+[gke]
+regions = ["asia-east1", "asia-southeast1"]
+public_listener = [
+  {name = "hello-serviceweaver", hostname = "hello-serviceweaver.example.com"},
+]
+
+["github.com/hyorimitsu/hello-serviceweaver/api/T"]
+notification_from = "from@example.com"
