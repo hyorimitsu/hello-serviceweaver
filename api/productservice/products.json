@@ -1,0 +1,69 @@
+[
+  {
+    "id": "P001",
+    "name": "Laptop",
+    "amount": 80000,
+    "description": "Thin and light design",
+    "has_stock": true
+  },
+  {
+    "id": "P002",
+    "name": "Smartphone",
+    "amount": 50000,
+    "has_stock": true
+  },
+  {
+    "id": "P003",
+    "name": "Headphones",
+    "amount": 2000,
+    "description": "Noise-cancelling",
+    "has_stock": false
+  },
+  {
+    "id": "P004",
+    "name": "Wireless Mouse",
+    "amount": 1500,
+    "has_stock": true
+  },
+  {
+    "id": "P005",
+    "name": "Monitor",
+    "amount": 35000,
+    "description": "27-inch display",
+    "has_stock": true
+  },
+  {
+    "id": "P006",
+    "name": "Keyboard",
+    "amount": 5000,
+    "description": "Mechanical keyboard",
+    "has_stock": true
+  },
+  {
+    "id": "P007",
+    "name": "External Hard Drive",
+    "amount": 8000,
+    "description": "1 TB capacity",
+    "has_stock": false
+  },
+  {
+    "id": "P008",
+    "name": "Printer",
+    "amount": 10000,
+    "has_stock": true
+  },
+  {
+    "id": "P009",
+    "name": "Tablet",
+    "amount": 25000,
+    "description": "10-inch screen",
+    "has_stock": true
+  },
+  {
+    "id": "P010",
+    "name": "Webcam",
+    "amount": 5000,
+    "description": "1080p resolution",
+    "has_stock": true
+  }
+]
