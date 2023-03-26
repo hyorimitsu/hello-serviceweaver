@@ -2,5 +2,10 @@ services:
   api:
     image: ${PROJECT_NAME}:${DOCKER_BUILD_TAG_VERSION}
     build: ./docker/go
+    volumes:
+      - ../api:/go/src/github.com/hyorimitsu/hello-serviceweaver/api
+    working_dir: /go/src/github.com/hyorimitsu/hello-serviceweaver/api
+    ports:
+      - ${PORT}:${PORT}
     environment:
-      - PORT=${PORT}
+      - PORT
