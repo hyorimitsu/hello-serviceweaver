@@ -8,5 +8,5 @@ public_listener = [
   {name = "hello-serviceweaver", hostname = "hello-serviceweaver.example.com"},
 ]
 
-["github.com/hyorimitsu/hello-serviceweaver/api/T"]
+["github.com/hyorimitsu/hello-serviceweaver/api/notificationservice/T"]
 notification_from = "from@example.com"
