@@ -18,11 +18,14 @@ type impl struct {
 	weaver.WithConfig[config]
 }
 
+// config is component configures.
+// NOTE: If you run on single, `weaver.toml` is not referenced (run via `go run`, not `weaver deploy`), so no value is set to config.
 type config struct {
 	From string `toml:"notification_from"`
 }
 
 // Validate is validate configs.
+// NOTE: This function called when execute `deploy` command.
 func (c *config) Validate() error {
 	if c.From == "" {
 		return fmt.Errorf("required notification_from setting in weaver.toml")
