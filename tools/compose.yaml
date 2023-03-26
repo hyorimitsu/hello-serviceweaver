@@ -1,0 +1,6 @@
+services:
+  api:
+    image: ${PROJECT_NAME}:${DOCKER_BUILD_TAG_VERSION}
+    build: ./docker/go
+    environment:
+      - PORT=${PORT}
