@@ -19,7 +19,6 @@ type impl struct {
 }
 
 // config is component configures.
-// NOTE: If you run on single, `weaver.toml` is not referenced (run via `go run`, not `weaver deploy`), so no value is set to config.
 type config struct {
 	From string `toml:"notification_from"`
 }
