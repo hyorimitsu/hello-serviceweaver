@@ -16,6 +16,7 @@ generate:
 
 weaver-single-deploy:
 	docker compose -f ./tools/compose.yaml run --rm --service-ports \
+		-e SERVICEWEAVER_CONFIG=weaver.toml \
 		api go run .
 
 weaver-single-test:
