@@ -15,7 +15,7 @@ Architecture when executed in a single process.
 ```mermaid
 graph LR
     subgraph Process A
-        main-->production
+        main-->product
         main-->payment
         main-->notification
     end
@@ -27,7 +27,7 @@ Architecture when executed in a multi process.
 
 ```mermaid
 graph LR
-    main-->production
+    main-->product
     main-->payment
     main-->notification
     subgraph Process A
@@ -40,7 +40,7 @@ graph LR
         payment
     end
     subgraph Process B
-        production
+        product
     end
 ```
 
@@ -50,7 +50,7 @@ Architecture when executed in a multi machines.
 
 ```mermaid
 graph LR
-    main-->production
+    main-->product
     main-->payment
     main-->notification
     subgraph Machine A
@@ -63,7 +63,7 @@ graph LR
         payment
     end
     subgraph Machine B
-        production
+        product
     end
 ```
 
@@ -80,7 +80,7 @@ graph LR
 
 ## Usage
 
-### 1. Build the applications
+### 1. Build the application
 
 Be sure to run the following commands first to generate binaries.
 
@@ -121,8 +121,7 @@ D0326 17:05:55.398432 main    27396897 server.go:51] hello-serviceweaver service
 
 ### 3. Check communication to the API
 
-You can check communication to the API by the following command.<br>
-If it is successful, a list of products will be returned as a response.
+You can check communication to the API by the following command.
 
 ```shell
 make weaver-${PROCESS_TYPE}-test
