@@ -53,6 +53,8 @@ func (s *Server) Run(root weaver.Instance) error {
 }
 
 func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	// The purpose of this sample is to understand Service Weaver.
+	// Although omitted in this example, it is necessary to allocate processing by Method (e.g., GET, POST, etc.).
 	switch r.URL.Path {
 	case "/products":
 		s.listProducts(w, r)
